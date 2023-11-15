@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="where">
+    <main>
+        <button onclick="dark()">light/dark</button>
+        <h1 id="num"></h1>
+        <h2 id="game"></h2>
+        <input type="text" id="next">
+        <button onclick="display()">click</button>
+
+    </main>
+</body>
+
+</html>
+
+<script>
+
+    let bod = document.getElementById('where')
+    let age = 18
+    function dark(){
+       document.body.style.backgroundColor == 'white' ? document.body.style.backgroundColor = 'black' : document.body.style.backgroundColor = 'white'
+    }
+    let next = document.getElementById('text')
+
+    //     let age = 18
+    //     let userAge = prompt(20)
+
+    //     userAge >= age ? alert("you are eligible") : alert("Not eligible")
+    // // 
+    // if(userAge >= age){
+    //     alert("Eligible")
+    // }else if(userAge == 0){
+    //     alert("youre'not yet born")
+    // }else{
+    //     alert("youre not eligible")
+    // }
+
+    // let random_number = Math.floor(Math.random() * 10)
+    // console.log(random_number);
+
+    // let num = document.getElementById("num");
+    // let game = document.getElementById("game");
+    // let input = document.getElementById("next").value
+
+    // const display = () => {
+    //     let random_number = Math.floor(Math.random() * 10);
+    //     num.innerHTML = randomNUM;
+    //     console.log(randomNum);
+
+    //     next === random_number
+    //         ? (num.innerHTML = "wow")
+    //         : (game.innerHTML = "you wrong");
+    // }
+
+let input = document.getElementById('next')
+let randomNUM = Math.floor(Math.random() *10)
+console.log(randomNUM);
+
+function display(){
+    input.value == randomNUM ? alert('correct') : alert('incorrect')
+}
+
+
+</script>
